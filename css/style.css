@@ -1,0 +1,136 @@
+:root{
+
+    /* Primary */
+    --verydarkblue:hsl(233, 47%, 7%); /*main background*/
+    --darkdesaturatedblue:hsl(244, 38%, 16%);/* card background*/
+    --softviolet:hsl(277, 64%, 61%);/*accent*/
+
+
+    /* Neutral */
+    --white:hsl(0,0%,100%); /*main heading and stats*/
+    --transparentwhite:hsla(0,0%,100%,0.75);/* main paragraph*/
+    --slightlytransparentwhite:hsla(0,0%,100%,0.6);/* stat headings*/
+    /* typography */
+
+    
+}
+*,
+*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    
+}
+html
+{
+    font-size:100%
+}
+body{
+background:black;
+}
+/* temporary */
+img
+{
+    width:100%;
+
+}
+.container{
+    background: var(--verydarkblue);
+    margin: 0 9%;
+    padding:2% 9.95%;
+    height:100vh;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -ms-flex: 2; /* IE 10 */
+    flex: 1;
+    
+
+}
+.img-mobile
+{
+    display: none;
+}
+.card
+{
+    background: var(--darkdesaturatedblue);
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items:stretch;
+   border-radius: 5px;
+   overflow: hidden;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    /* margin-right: 2rem; */
+
+}
+h1,span{
+    font-size: 1.6rem;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.5px;
+}
+p
+{
+    font-size: 0.82rem;
+    color:var(--slightlytransparentwhite);
+    padding-right: 3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 1rem;
+    
+}
+span{
+    color:var(--softviolet);
+}
+
+.stats
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.6rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.stat-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stat-number{
+color: var(--white);
+font-size: 1rem;
+
+}
+.stat-text p
+{
+    color: var(--slightlytransparentwhite);
+    text-transform: uppercase;
+    font-size:0.7rem ;
+    letter-spacing: 0.7px;
+}
+
+.stat-number:last-child
+{
+    text-transform:u;
+}
+
+
+.image
+{
+    /* width: 5500%; */
+    /* background-size: cover; */
+    background: var(--softviolet);
+
+}
+img{
+    mix-blend-mode: multiply;
+}
