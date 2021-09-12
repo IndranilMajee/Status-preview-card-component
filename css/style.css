@@ -51,7 +51,7 @@ html {
   justify-content: space-between;
   padding: 5rem 7.25rem 4.12rem 4.5rem;
 }
-h1,
+.heading,
 span {
   display: inline-block;
   font-size: 1.9rem;
@@ -59,7 +59,7 @@ span {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
-h1 {
+.heading {
   padding-bottom: 1.6rem;
 }
 .interior {
@@ -83,21 +83,22 @@ span {
   flex-direction: column;
   justify-content: flex-start;
 }
-.stat-block > p {
+.stat-block > h4 {
   font-family: "Lexend Deca", sans-serif;
 }
 
-.stat-number h2 {
+.stat-number h1 {
   color: var(--white);
   font-size: 1.5rem;
   letter-spacing: 0.2px;
 }
 
-.stat-text p {
+.stat-text h4 {
   display: inline-block;
   color: var(--slightlytransparentwhite);
   text-transform: uppercase;
   font-size: 0.7rem;
+  font-weight: 400;
   letter-spacing: 0.7px;
 }
 
@@ -175,10 +176,10 @@ img {
   span {
     font-size: 2rem;
   }
-  .stat-number h2 {
+  .stat-number h1 {
     font-size: 1.7rem;
   }
-  .stat-text p {
+  .stat-text h4 {
     margin-bottom: 2.4rem;
     font-size: 0.85rem;
   }
