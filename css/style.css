@@ -34,8 +34,8 @@ html {
   background: var(--verydarkblue);
 }
 .card {
-  width: 73%;
-  height: 62vh;
+  width: 69.25rem;
+  height: 27.875rem;
   background: var(--darkdesaturatedblue);
   display: flex;
   justify-content: center;
@@ -44,31 +44,30 @@ html {
   overflow: hidden;
 }
 .block {
-  width: 50%;
+  width: 36rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 3.5rem 4.35rem 3rem 3.5rem;
+  padding: 5rem 7.25rem 4.12rem 4.5rem;
 }
 h1,
 span {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 0;
+  font-weight: 700;
   letter-spacing: 0.5px;
 }
 h1 {
-  padding-right: 2rem;
+  padding-bottom: 1.6rem;
 }
-p {
-  font-size: 0.834rem;
+.interior {
+  font-size: 1rem;
   color: var(--transparentwhite);
-  padding-right: 3rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.2px;
-  margin-bottom: 0.2rem;
-  opacity: 0.9;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+  padding: 0 2.1rem 4rem 0;
 }
 span {
   color: var(--softviolet);
@@ -78,7 +77,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3rem;
 }
 .stat-block {
   display: flex;
@@ -91,7 +89,7 @@ span {
 
 .stat-number h2 {
   color: var(--white);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2px;
 }
 
@@ -103,7 +101,7 @@ span {
   letter-spacing: 0.7px;
 }
 
-.image {
+picture {
   height: 100%;
   width: 50%;
   position: relative;
@@ -120,11 +118,14 @@ img {
   mix-blend-mode: multiply;
 }
 .attribution {
+  background: var(--verydarkblue);
+  color: var(--slightlytransparentwhite);
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
@@ -139,7 +140,7 @@ img {
     flex-flow: column-reverse;
     width: 90%;
     overflow: visible;
-    margin: 5rem 0;
+    margin: 5.31rem 1.6rem;
     border-radius: 8px;
     overflow: hidden;
   }
@@ -158,28 +159,32 @@ img {
     text-align: center;
   }
   h1,
-  p {
-    padding-right: 0;
+  .interior {
+    padding: 0;
+    margin-bottom: 1.5rem;
   }
   p {
     font-size: 1rem;
     line-height: 1.6rem;
     letter-spacing: 0.5px;
   }
-  h1 {
-    font-size: 1.93rem;
-    margin-bottom: 1.5rem;
+  .interior {
+    margin-bottom: 3.2rem;
+  }
+  h1,
+  span {
+    font-size: 2rem;
   }
   .stat-number h2 {
     font-size: 1.7rem;
   }
   .stat-text p {
-    margin-bottom: 2rem;
+    margin-bottom: 2.4rem;
     font-size: 0.85rem;
   }
-  .image {
+  picture {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.75rem;
   }
   img {
     display: block;
