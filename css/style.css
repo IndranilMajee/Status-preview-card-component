@@ -33,9 +33,6 @@ html {
   justify-content: center;
   background: var(--verydarkblue);
 }
-.img-mobile {
-  display: none;
-}
 .card {
   width: 73%;
   height: 62vh;
@@ -111,23 +108,16 @@ span {
   width: 50%;
   position: relative;
   background: var(--softviolet);
+  border-radius: 2px solid red;
 }
-.image img {
+img {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: bottom;
+  opacity: 0.75;
   mix-blend-mode: multiply;
-}
-.overlay {
-  background-color: var(--softviolet);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  opacity: 0.25;
 }
 .attribution {
   font-size: 11px;
@@ -137,7 +127,7 @@ span {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 500px) {
   /* For mobile screen size: 375px */
   .container {
     height: auto;
@@ -187,14 +177,11 @@ span {
     margin-bottom: 2rem;
     font-size: 0.85rem;
   }
-  .img-desktop {
-    display: none;
-  }
   .image {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .img-mobile {
+  img {
     display: block;
     width: 100%;
     height: auto;
