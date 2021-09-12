@@ -83,7 +83,7 @@ span {
   flex-direction: column;
   justify-content: flex-start;
 }
-.stat-block > h4 {
+.stat-block > h3 {
   font-family: "Lexend Deca", sans-serif;
 }
 
@@ -93,7 +93,7 @@ span {
   letter-spacing: 0.2px;
 }
 
-.stat-text h4 {
+.stat-text h3 {
   display: inline-block;
   color: var(--slightlytransparentwhite);
   text-transform: uppercase;
@@ -179,7 +179,7 @@ img {
   .stat-number h2 {
     font-size: 1.7rem;
   }
-  .stat-text h4 {
+  .stat-text h3 {
     margin-bottom: 2.4rem;
     font-size: 0.85rem;
   }
