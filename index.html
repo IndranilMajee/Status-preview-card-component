@@ -60,15 +60,15 @@
         </div>
 
         <picture class="image">
-          <source
-            media="(max width: 799px)"
-            srcset="images/image-header-mobile.jpg"
+          <img
+            src="images/image-header-desktop.jpg"
+            srcset="
+              images/image-header-mobile.jpg  500w,
+              images/image-header-desktop.jpg 800w
+            "
+            sizes="(max-width=500px)100%,100%"
+            alt="hero-image"
           />
-          <source
-            media="(min-width: 800px)"
-            srcset="images/image-header-desktop.jpg"
-          />
-          <img src="images/image-header-desktop.jpg" alt="desktop-hero-image" />
         </picture>
       </div>
     </section>
