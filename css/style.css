@@ -87,7 +87,7 @@ span {
   font-family: "Lexend Deca", sans-serif;
 }
 
-.stat-number h1 {
+.stat-number h2 {
   color: var(--white);
   font-size: 1.5rem;
   letter-spacing: 0.2px;
@@ -176,7 +176,7 @@ img {
   span {
     font-size: 2rem;
   }
-  .stat-number h1 {
+  .stat-number h2 {
     font-size: 1.7rem;
   }
   .stat-text h4 {
